@@ -6,6 +6,7 @@
 # The program ends if the input is 1, or the current value is 1.
 # Sounds like a while loop, i.e "while it's not 1, do calculations"
 
+# Author: Fabio Fabrizi
 
 posInt = int(input("Please enter a positive integer: "))
 # checking as I go along
