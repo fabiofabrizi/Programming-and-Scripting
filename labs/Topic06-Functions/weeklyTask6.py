@@ -26,7 +26,7 @@ def newtonSquareRoot(num):
     return guess
 # print(newtonSquareRoot(num))
 
-guess = 5
+# guess = 5
 
 while True:
     num = float(input("Please enter a positive number: "))
