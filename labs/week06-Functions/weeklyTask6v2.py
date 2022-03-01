@@ -18,10 +18,26 @@
 # √num = 0.5*(guess + (num/guess))
 
 def newtonSquareRoot(num):
-    guess=0.5*num
-    better=0.5*(guess+num/guess)
-    while better!=guess:
-        guess=better
-        better=0.5*(guess+num/guess)
+    guess = 0.5 * num # Automatically set a value for the guess
+    numRoot = 0.5 * (guess + (num/guess))
+    while numRoot != guess:
+        guess = numRoot
+        numRoot = 0.5*(guess + (num/guess))
     return guess
-print(newtonSquareRoot(64))
+
+
+while True:
+    num = float(input("Please enter a positive number: "))
+    if num < 0:
+        print("That wasn't a positive number. Please try again.")
+    else:
+        print("The square root of {} is {}".format(num, newtonSquareRoot(num)))
+        
+        # Test the loop
+        # print("The square of your number is " + str(round(num ** 2)))
+        # Calculation time
+
+        # Don't forget to add a break to break out the loop after checking iteration
+        break
+    
+print("Thanks for following instructions!") # You can put final message here
